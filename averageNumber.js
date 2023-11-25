@@ -11,13 +11,12 @@
 
 
 let arrOfNum = [1, 3, 7, 15, 8]
-const meanNum = () => {
+const findAverage = (a) => {
     let sum = 0
-    for (let i = 0; i < arrOfNum.length; i++) {
-        sum += arrOfNum[i]
+    for (let i = 0; i < a.length; i++) {
+        sum += a[i]
     }
-    return sum / arrOfNum.length
+    return sum / a.length
 }
 
-console.log (meanNum())
-console.log (arrOfNum[4])
+console.log (findAverage(arrOfNum))
