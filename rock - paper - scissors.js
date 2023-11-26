@@ -1,10 +1,10 @@
-function getComputerChoice ()    {
+const getComputerChoice = () =>    {
     const choices = ['rock', 'paper', 'scissors']
     const randomIndex = Math.floor(Math.random() * 3)
     return choices[randomIndex]
 }
 
-function determineWinner (userChoice, computerChoice) {
+const determineWinner = (userChoice, computerChoice) => {
     if (userChoice === computerChoice) {
         return 'Draw'
     }
@@ -21,7 +21,7 @@ function determineWinner (userChoice, computerChoice) {
 }
 
 
-function playGame (userChoice) {
+const playGame =  (userChoice) => {
     const computerChoice = getComputerChoice()
     console.log('Your choice: ' + userChoice)
     console.log('Computer choice: ' + computerChoice)
