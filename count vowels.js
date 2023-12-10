@@ -27,7 +27,7 @@ const vowels = ['a', 'e', 'i', 'o', 'u']
 //     }
 // })
 
-// option 3
+// Option 3
 for (const char of str) {
     if (vowels.includes(char)) {
         vowelsCount += 1
