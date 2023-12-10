@@ -1,3 +1,6 @@
+
+const str = 'Today is the best day of my life'
+// option 1
 const countVowels = (str) => {
     str = str.toLowerCase()
     const vowels = 'aeiyou'
@@ -9,7 +12,26 @@ const countVowels = (str) => {
     }
     return count
 }
-
-const inputStr = 'My name is Egor'
-const result = countVowels(inputStr)
+const result = countVowels(str)
 console.log (result)
+
+let vowelsCount = 0
+const vowels = ['a', 'e', 'i', 'o', 'u']
+
+
+// Option 2
+//
+// str.split('').forEach((char) => {
+//     if (vowels.includes(char)) {
+//         vowelsCount += 1
+//     }
+// })
+
+// option 3
+for (const char of str) {
+    if (vowels.includes(char)) {
+        vowelsCount += 1
+    }
+}
+
+console.log(vowelsCount)
