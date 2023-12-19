@@ -1,13 +1,15 @@
 const App = () => {
-    let [buttonText, setButtonText] = React.useState('Click me')
+    const [buttonText, setButtonText] = React.useState('Click me')
+    const [classesList, setClassesList] = React.useState ('')
     const onButtonClick = () => {
         setButtonText ('Hello from React')
+        setClassesList ('green-btn')
     }
 
 
     return (
         <div className="app">
-            <button onClick={onButtonClick}>{buttonText}</button>
+            <button className={classesList} onClick={onButtonClick}>{buttonText}</button>
         </div>
     )
 }
